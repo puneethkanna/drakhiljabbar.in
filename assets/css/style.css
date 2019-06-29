@@ -1,0 +1,231 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+* { font-family: 'Lato', sans-serif;}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.center *{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.container{
+  min-height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+/* Profile Section */
+#profile { background-color: #011938; }
+
+#profile * { color: #fff; }
+
+#site-title{
+  float: left;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#main-nav-list{
+  margin: 0;
+  padding-top: 30px;
+  list-style-type: none;
+}
+
+.main-nav-item{
+  font-size: 20px;
+  margin-right: 20px;
+  display: inline;
+  float: right;
+}
+
+.main-nav-item a{
+  text-decoration: none;
+}
+
+.main-nav-item a:hover{
+  text-decoration: underline;
+}
+
+#profile-pic{
+  margin-top: 100px;
+  height: 250px;
+  width: 250px;
+  border: 5px solid #FFF;
+  border-radius: 50%;
+}
+
+#profile-name{
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+#profile-tag{
+  margin-top: 5px;
+}
+
+#social-media-links{
+  list-style-type: none;
+}
+
+#social-media-links li{
+  display: inline;
+  margin-right: 30px;
+}
+
+/* About Section */
+#about{
+  display: table;
+  background-color: #e1e1e1;
+}
+
+#about *{
+  text-align: left;
+  color: #000;
+}
+
+#about-content{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding: 50px 10% 20px 10%;
+}
+
+#about-content h1{
+  text-align: center;
+  padding: 10px;
+}
+
+/* Footer Section */
+#footer{
+  display: table;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#footer a{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+#footer img{
+  max-width: 200px;
+}
+
+#footer #scopus-logo{
+  height: 50px;
+}
+
+#copyright{
+  font-size: 16px;
+  color: #000;
+  background-color: #e5e5e5;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#journals h4{
+  padding-left: 1.8em;
+}
+
+#journals ol li{
+  margin-top: 30px;
+}
+
+#journals ol li a{
+  color: #000;
+}
+
+#memberships .modal-content{
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#memberships ol li{
+  margin-top: 30px;
+}
+
+@media (max-width: 750px) {
+  .flex-grid {
+    display: block;
+  }
+
+  .main-nav-item{
+    text-align: center;
+    margin-top: 20px;
+    float: none;
+    display: block;
+  }
+
+  #site-title{
+    float: none;
+    display: block;
+  }
+}
